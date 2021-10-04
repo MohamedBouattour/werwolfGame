@@ -1,0 +1,13 @@
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">NA3NE3A</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div id="container">
+    <ion-button *ngIf='!gameStarted' (click)='run()'>Start Game</ion-button>
+    <ion-button *ngIf='gameStarted' (click)='showRole()'>Show Role</ion-button>
+  </div>
+</ion-content>

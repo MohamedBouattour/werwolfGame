@@ -1,0 +1,20 @@
+<ion-header translucent>
+  <ion-toolbar>
+    <ion-title>Play as a {{currentRole}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <div class='playes-list'>
+    <div (click)='select(player)' *ngFor="let player of playersList" class='player-avatar'>
+      <ion-avatar [ngClass]="{'selected': player == selectedPlayer}">
+        <img
+          src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y"
+        />
+      </ion-avatar>
+      <ion-label>{{ player.name }}</ion-label>
+    </div>
+  </div>
+</ion-content>
+<ion-footer>
+  <ion-button (click)='dismissModal()' *ngIf='selectedPlayer'>Kill</ion-button>
+</ion-footer>

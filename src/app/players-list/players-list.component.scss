@@ -1,0 +1,19 @@
+.playes-list {
+  display: flex;
+}
+
+.player-avatar {
+  padding-top: 3%;
+  margin: 4%;
+}
+
+ion-button {
+  width: 60%;
+  margin-left: 20%;
+}
+
+.selected {
+  border-radius: 50% !important;
+  overflow: hidden !important;
+  border: 5px solid red !important;
+}
